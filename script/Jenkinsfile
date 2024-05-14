@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('init'){
             steps{
-                sh 'terraform init -reconfigure -no-color'
+                sh 'terraform init -no-color'
             }
         }
         stage('validate'){
